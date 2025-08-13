@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./library/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-pink-400/70 text-white h-30 flex flex-col items-center justify-center p-6">
+      <h1 class="font-festive text-5xl">Practical case module 3</h1>
+      <p class="font-playwrite text-lg">by Solis Torres Mariana Nazaret</p>
+  </header>
+  <!-- Registro y inicio  -->
+  <div id="loginRegister" class="bg-purple-300  h-170 flex justify-center items-center hidden">
+    <!-- login -->
+    <div id="loginSection" class="bg-yellow-50 flex flex-col items-center justify-center box-content size-160 rounded-4xl shadow-xl/30 ">
+      <p class="font-festive text-5xl text-indigo-600 mb-10">Welcome to the case study</p>
+      <input type="text" placeholder="Username" id="userName" class="bg-sky-500/60 text-white  my-2 p-3 rounded-lg w-80 font-poiretone text-center placeholder:font-bold placeholder:text-white/80 font-bold focus:bg-sky-600 focus:outline-none">
+      <input type="text" placeholder="Password" id="password"class="bg-sky-500/60 text-white  my-2 p-3 rounded-lg w-80 font-poiretone text-center  placeholder:font-bold placeholder:text-white/80 font-bold focus:bg-sky-600 focus:outline-none">
+      <button  id="bntSignIn"  class=" bg-blue-600/70 ring-2 ring-blue-600 text-white font-bold w-30 h-8 rounded-xl font-poiretone m-2">Sign In</button>
+      <p class="font-playwrite text-purple-950">Don´t have an account?</p>
+      <button id="signUp" class="text-blue-600 font-bold w-30 h-8 rounded-xl font-poiretone m-2">Sign Up</button>
+      <p id="loginError" class="text-red-600"></p>
+    </div>
+    <!-- Registro -->
+    <div id="registerSection" class="bg-yellow-50 flex flex-col items-center justify-center box-content size-160 rounded-4xl shadow-xl/30 hidden">
+      <p class="font-festive text-5xl text-indigo-600 mb-10">Create An Account</p>
+      <input type="text" placeholder="Username" id="regUserName" class="bg-sky-500/60 text-white  my-2 p-3 rounded-lg w-80 font-poiretone text-center placeholder:font-bold placeholder:text-white/80 font-bold focus:bg-sky-600 focus:outline-none">
+      <input type="password" placeholder="Password" id="regPassword"class="bg-sky-500/60 text-white  my-2 p-3 rounded-lg w-80 font-poiretone text-center  placeholder:font-bold placeholder:text-white/80 font-bold focus:bg-sky-600 focus:outline-none">
+      <input type="number" placeholder="Age" id="regAge"class="bg-sky-500/60 text-white  my-2 p-3 rounded-lg w-80 font-poiretone text-center  placeholder:font-bold placeholder:text-white/80 font-bold focus:bg-sky-600 focus:outline-none">
+      <input type="email" placeholder="Email" id="regEmail"class="bg-sky-500/60 text-white  my-2 p-3 rounded-lg w-80 font-poiretone text-center  placeholder:font-bold placeholder:text-white/80 font-bold focus:bg-sky-600 focus:outline-none">
+      <button  id="bntRegister"  class=" bg-blue-600/70 ring-2 ring-blue-600 text-white font-bold w-30 h-8 rounded-xl font-poiretone m-2">Create Account</button>
+      <button  id="bntBackLogin"  class=" bg-blue-600/70 ring-2 ring-blue-600 text-white font-bold w-30 h-8 rounded-xl font-poiretone m-2">Back login</button>
+      <p id="registerMsg" style="color: lightgreen;"></p>
+    </div>
+  </div> 
+  <!-- Pagina principal -->
+  <div id="paginaPrincipal" class="bg-purple-200  h-170 flex justify-center items-center ">
+    <div class="bg-yellow-50 flex flex-col items-center justify-center box-content size-160 rounded-4xl shadow-xl/30">
+      <h2 id="welcome-msg"></h2>
+      <button id="get-data-btn">Petición GET</button>
+      <button id="post-data-btn">Petición POST</button>
+      <div class="result" id="api-result"></div>
+      <button id="logout-btn">Cerrar sesión</button>
+    </div>
+    
+  </div>
+  <!-- Pie de pagina -->
+  <footer class="bg-pink-400/70 h-10 flex justify-center items-center text-white font-poiretone">
+            <p>&copy; 2025 Mariana Solis. Todos los derechos reservados.</p>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>

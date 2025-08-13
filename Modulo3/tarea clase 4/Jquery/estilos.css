@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 200px;
+    margin: 0px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+     font-family: "Fredericka the Great", serif;
+     font-size: 60px;
+     margin: 0px;
+}
+
+h3{
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+}
+
+#contenedor{
+    margin: 0px;
+    padding: 10px;
+    height: 520px;
+    background-image: url(https://i.pinimg.com/originals/bf/bb/77/bfbb7726e0c2b0ccffac56965974f8cc.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuarios_item{
+    font-family: "Instrument Serif", serif;
+    font-size: 30px;
+    padding: 2px 100px 2px 100px;
+    margin: 3px 50px 3px 50px;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+footer{
+    margin: 0px;
+    padding: 10px;
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    justify-content: center;
+}

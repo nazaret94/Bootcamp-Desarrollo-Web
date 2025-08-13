@@ -1,0 +1,137 @@
+
+@import url("https://use.typekit.net/weu5hwm.css");
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: aliceblue
+}
+
+h1{
+    margin: 0px;
+    font-family: alex-brush, sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    font-size: 60px;
+}
+
+header strong{
+    padding-top: 10px;
+    padding-left: 35px;
+    background: linear-gradient(45deg, blue, rgb(202, 58, 154));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#contenedor{
+    height:700px;
+    display: flex;
+}
+
+#contenedor_buscador{
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blueviolet;
+    margin: 10px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor_buscador p{
+    font-family: montserrat, sans-serif;
+    font-size: 19px;
+    color:purple;
+}
+
+#btnBuscar{
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 6px;
+    border: 0px;
+    color: aliceblue;
+    font-family: montserrat, sans-serif; 
+    font-size: 16px;
+}
+
+#personaje{
+    font-family: montserrat, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 70%;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+#contenedor_resultado{
+    width: 80%;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+}
+#resultado_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.personaje_img{
+    width: 500px;
+    height: 500px;
+}
+
+#resultado_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 60%;
+    height: 100%;
+    padding: 60px;
+}
+
+.info{
+    font-size: 25px;
+    margin: 0px;
+    font-family: "Agdasima", sans-serif;
+}
+
+.error_personaje{
+    padding-left: 300px;
+    padding-top: 240px;
+    font-size: 60px;
+    color: rgb(212, 13, 13);
+    font-family: "Barriecito", system-ui;
+}
+
+#nombre_personaje{
+    margin: 0px;
+    color: blue;
+    font-size: 50px;
+    font-family: "Fascinate Inline", system-ui;
+}
+
+#frase_personaje{
+    margin: 0px;
+    color: rgba(141, 23, 236, 0.74);
+    font-size: 30px;
+    font-family: "Agdasima", sans-serif;
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+}

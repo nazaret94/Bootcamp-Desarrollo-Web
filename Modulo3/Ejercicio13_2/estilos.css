@@ -1,0 +1,40 @@
+#contenedor_cajas{
+    width: 100%;
+    /* display: flex;
+     */
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    grid-gap: 10px;
+   
+}
+.contenedor_caja{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.contenedor_boton{
+    width: 150px;
+    height: 60px;
+    border: 3px solid palevioletred;
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+}
+#contenedor_botones{
+    display: flex;
+    justify-content:start;
+}
+
+.cajaRoja{
+    background-color: red;
+}
+.cajaVerde{
+    background-color: green;
+}
+.cajaRedonda{
+    border-radius: 10px;
+}

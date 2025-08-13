@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    /* background-color:darkgray; */
+}
+header{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.pinimg.com/1200x/dd/bf/9e/ddbf9e250bca1543ed82592dc40f5978.jpg);
+}
+
+header h1, header p{
+    background-color: black;
+    padding: 4px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+header h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+}
+
+p{
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+}
+
+#indicaciones{
+    /* background-color: blueviolet; */
+    font-family: "Imperial Script", cursive;
+    font-size: 23px;
+    padding: 5px;
+    padding-left: 50px;
+}
+
+#buscador p {
+    padding-right: 30px;
+    font-size: 16px;
+}
+#personajeHP{
+    font-family: "Raleway", sans-serif;
+    margin-right: 30px;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 16px;
+    width: 50%;
+    border: 1px solid rebeccapurple;
+    transition: border-color 0.3s;
+}
+
+#btnBuscar{
+    font-family: "Raleway", sans-serif;
+    background-color: blue;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    width: 100px;
+    height: 48px;
+    font-size: 16px;
+}
+
+#buscador{
+    padding: 5px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#resultado{
+    background-image: url(https://i.pinimg.com/736x/24/4e/47/244e47fa71490909c5b5742efb7c0047.jpg);
+    border-radius: 20px;
+    margin: 30px;
+    padding: 10px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+}

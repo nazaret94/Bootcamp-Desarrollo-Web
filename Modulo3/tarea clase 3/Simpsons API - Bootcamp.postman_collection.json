@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "be603464-7696-47d9-99a4-788ba9b133e6",
+		"name": "Simpsons API - Bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47018359",
+		"_collection_link": "https://z-areth94-1007344.postman.co/workspace/Nazaret's-Workspace~3fe0d9c1-843c-405d-86f3-7ed98ae5bf42/collection/47018359-be603464-7696-47d9-99a4-788ba9b133e6?action=share&source=collection_link&creator=47018359"
+	},
+	"item": [
+		{
+			"name": "GET - Todos los personajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://thesimpsonsapi.com/api/characters",
+					"protocol": "https",
+					"host": [
+						"thesimpsonsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET -Obtener el personaje con el id 27",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET- Obten episodio 10",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
