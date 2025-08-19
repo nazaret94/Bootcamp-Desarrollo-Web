@@ -8,6 +8,7 @@ class MostrarUsuariosFetch {
         try {
             const respuesta = await fetch(this.apiUrl);
             const data = await respuesta.json();
+            console.log(data);
             data.forEach(usuario => {
                 const li = document.createElement("li");
                 li.className = "usuarios_item";
