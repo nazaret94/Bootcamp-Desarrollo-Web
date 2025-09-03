@@ -63,9 +63,9 @@ app.delete("/usuarios/:id", (req, res) => {
         return;
         }
         if (resultado.affectedRows === 0) {
-        res.status(404).json({ mensaje: "Usuario no encontrado" });
+        res.status(404).json({ mensaje: "Usuario no encontrado", success: false });
         } else {
-        res.status(200).json({ mensaje: "Usuario eliminado correctamente" });
+        res.status(200).json({ mensaje: "Usuario eliminado correctamente", success: true });
         }
     });
 });

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --walter-turncoat: "Walter Turncoat", cursive;
+    --comic-neue: "Comic Neue", cursive;
+    --cairo:"Cairo", sans-serif;
+  }
+}
+
+@layer utilities {
+  .walter-turncoat {
+    font-family: var(--walter-turncoat);
+  }
+  .comic-neue{
+    font-family: var(--comic-neue);
+  }
+  .cairo {
+    font-family: var(--cairo);
+  }
+ 
+}

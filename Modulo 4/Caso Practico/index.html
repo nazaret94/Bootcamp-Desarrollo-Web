@@ -3,38 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./estilos.css">
     <title>Caso Practico</title>
 </head>
 <body>
-   <header>
-    <h1>Caso Practico 4</h1>
-    <h2>Integracion JS - mySQL</h2>
+   <header class="bg-violet-400 h-30 flex flex-col justify-center text-center p-9">
+    <h1 class="text-violet-50 walter-turncoat text-6xl text-shadow-lg/50">Caso Practico 4</h1>
+    <h2 class="text-violet-50 comic-neue text-3xl mt-2 text-shadow-lg/50">Integracion JS - mySQL</h2>
    </header>
-   <div>
-        <h3>Seccion para agregar usuario</h3>
-        <label for="nombre_usuario">Nombre:</label>
-        <input type="text" placeholder="Nombre" id="nombre_usuario">
-        <label for="apellido_usuario">Apellido:</label>
-        <input type="text" placeholder="Apellido" id="apellido_usuario">
-        <label for="fecha_nacimiento_usuario">Fecha de nacimiento</label>
-        <input type="date" placeholder="Fecha de nacimiento" id="fecha_nacimiento_usuario">
-        <label for="correo_usuario">Correo</label>
-        <input type="text" placeholder="Correo" id="correo_usuario">
-        <label for="telefono_usuario">Telefono</label>
-        <input type="text" placeholder="Telefono" id="telefono_usuario">
-        <button  id="bntAgregaUsuario">Agrega usuario</button>
-        <p id="mensaje_post"></p>
+
+   <div class="bg-violet-100 xl:h-90 md:h-120 m-5 rounded-xl border-4 border-dashed border-violet-400 flex flex-col justify-center items-center">
+        <h3 class="comic-neue text-3xl text-violet-700 text-shadow-lg/20">Agrega usuario:</h3>
+        <div id="form_agregar" class="mt-5 mb-5 grid xl:grid-cols-3 md:grid-cols-1 gap-4">
+            <div>
+                <label for="nombre_usuario" class="cairo text-xl text-violet-950">Nombre:</label>
+                <input type="text" placeholder="Nombre" id="nombre_usuario" class="bg-white rounded-md border-2 border-violet-700 p-1 text-xl text-violet-700 placeholder:text-xl placeholder:text-violet-700">
+            </div>
+            <div>
+                <label for="apellido_usuario" class="cairo text-xl text-violet-950">Apellido:</label>
+                <input type="text" placeholder="Apellido" id="apellido_usuario" class="bg-white rounded-md border-2 border-violet-700 p-1 text-xl text-violet-700 placeholder:text-xl placeholder:text-violet-700">
+            </div>
+            <div>
+                <label for="fecha_nacimiento_usuario" class="cairo text-xl text-violet-950">Fecha de nacimiento</label>
+                <input type="date" placeholder="Fecha de nacimiento" id="fecha_nacimiento_usuario" class="bg-white rounded-md border-2 border-violet-700 p-1 text-xl text-violet-700 placeholder:text-xl placeholder:text-violet-700">
+            </div>
+            <div>
+                <label for="correo_usuario" class="cairo text-xl text-violet-950">Correo</label>
+                <input type="text" placeholder="Correo" id="correo_usuario" class="bg-white rounded-md border-2 border-violet-700 p-1 text-xl text-violet-700 placeholder:text-xl placeholder:text-violet-700">
+            </div>
+            <div>
+                <label for="telefono_usuario" class="cairo text-xl text-violet-950">Telefono</label>
+                <input type="text" placeholder="Telefono" id="telefono_usuario" class="bg-white rounded-md border-2 border-violet-700 p-1 text-xl text-violet-700 placeholder:text-xl placeholder:text-violet-700">
+            </div> 
+        </div>
+        <button  id="bntAgregaUsuario" class="cairo bg-violet-400 rounded-md border-3 border-violet-500 w-50 h-10 text-violet-50 text-xl">Agregar</button>
+        <div id="mensaje_post"></div>
     </div>
-    <div>
-        <h3>Seccion para eliminar usuario</h3>
-        <label for="id_usuario">Nombre:</label>
-        <input type="text" placeholder="ID del usuario" id="id_usuario">
-        <button  id="bntEliminarUsuario">Eliminar usuario</button>
-        <p id="mensaje_delete"></p>
-    <div>
-        <h3>Seccion para mostar a los usuarios</h3>
-        <button  id="bntMuestraUsuarios"  class=" bg-blue-600/70 ring-2 ring-blue-600 text-white font-bold w-30 h-8 rounded-xl font-poiretone m-2">Muestra los usuarios</button>
-        <div id="tabla_Usuarios"></div>
+
+    <div class="bg-violet-100 xl:h-70 md:h-60 m-5 rounded-xl border-4 border-dashed border-violet-400 flex flex-col justify-center items-center"">
+        <h3 class="comic-neue text-3xl text-violet-700 text-shadow-lg/20">Eliminar usuario</h3>
+        <div class="mt-5 mb-5">
+            <label for="id_usuario" class="cairo text-xl text-violet-950 ">Nombre:</label>
+            <input type="text" placeholder="ID del usuario" id="id_usuario" class="bg-white rounded-md border-2 border-violet-700 p-1 text-xl text-violet-700 placeholder:text-xl placeholder:text-violet-700">
+        </div>
+        <button  id="bntEliminarUsuario" class="cairo bg-violet-400 rounded-md border-3 border-violet-500 w-50 h-10 text-violet-50 text-xl">Eliminar</button>
+        <div id="mensaje_delete"></div>
+    </div> 
+
+    <div class="bg-violet-100 xl:h-150 md:h-120 m-5 rounded-xl border-4 border-dashed border-violet-400 flex flex-col justify-center items-center"">
+        <h3 class="comic-neue text-3xl text-violet-700 text-shadow-lg/20 mb-5 mt-10">Mostrar usuarios</h3>
+        <button  id="bntMuestraUsuarios"  class="cairo bg-violet-400 rounded-md border-3 border-violet-500 w-50 h-10 text-violet-50 text-xl mb-5">Mostrar</button>
+        <div id="tabla_Usuarios" class="h-200 w-full flex justify-center items-start"></div>
     </div>
    
     <script src="./app.js"></script>

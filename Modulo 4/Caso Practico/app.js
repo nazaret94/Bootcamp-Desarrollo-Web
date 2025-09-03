@@ -29,12 +29,15 @@ bntAgregaUsuario.addEventListener('click',function(){
         })
     })
     .then(res => res.json())
-    .then(data => { //caso exitoso
-        mensaje_post.innerHTML= "El usuario fue agregado correctamente";
-        console.log("Usuario agregado:", data)
+    .then(data => { //se comunico con el api
+        if(data.mensaje === undefined){
+            mensaje_post.innerHTML= `<p class="walter-turncoat text-red-600 pt-5">El usuario no pudo ser agregado</p>`
+        }else{
+            mensaje_post.innerHTML= `<p class="walter-turncoat text-green-600 pt-5">Usuario agregado</p>`
+        }
     })
     .catch(err => {//caso no exitoso
-        mensaje_post.innerHTML = "El usuario no fue agregado";
+        mensaje_post.innerHTML = `<p class="walter-turncoat text-red-600 pt-5">El usuario no pudo ser agregado</p>`
         console.error("Error al agregar:", err)
     });
 })
@@ -52,24 +55,25 @@ bntMuestraUsuarios.addEventListener('click', function(){
         return response.json();
     })
     .then((data) => {
-        let tabla_usuarios = `<table class="font-poiretone mt-5  border-4 rounded-xl  border-blue-400">
+        let tabla_usuarios = `<table class="cairo xl:text-3xl md:text-xl text-violet-950 mt-5 ">
                                 <tr>
-                                <th>ID</th>
-                                <th>Nombre</th>
-                                <th>Apellido</th>
-                                <th>Fecha de nacimiento</th>
-                                <th>Correo</th>
-                                <th>Telefono</th>
+                                <th class="p-1 w-20">ID</th>
+                                <th class="p-1 w-60">Nombre</th>
+                                <th class="p-1 w-60">Apellido</th>
+                                <th class="p-1 w-80">Fecha de nacimiento</th>
+                                <th class="p-1 w-90">Correo</th>
+                                <th class="p-1 w-60">Telefono</th>
                                 </tr>
                             `
         data.forEach((usuario) => {
+            let fecha_usuario = new Date(usuario.fecha_nacimiento);
             tabla_usuarios += `<tr>
-                                    <td>${usuario.id_usuario}</td>
-                                    <td>${usuario.nombre}</td>
-                                    <td>${usuario.apellido}</td>
-                                    <td>${usuario.fecha_nacimiento}</td>
-                                    <td>${usuario.email}</td>
-                                    <td>${usuario.telefono}</td>
+                                    <td class="p-1 w-20 text-center">${usuario.id_usuario}</td>
+                                    <td class="p-1 w-60 text-center">${usuario.nombre}</td>
+                                    <td class="p-1 w-60 text-center">${usuario.apellido}</td>
+                                    <td class="p-1 w-80 text-center">${fecha_usuario.toLocaleDateString()}</td>
+                                    <td class="p-1 w-90 text-center">${usuario.email}</td>
+                                    <td class="p-1 w-60 text-center">${usuario.telefono}</td>
                                 </tr>
                                 `;   
         });
@@ -81,7 +85,9 @@ bntMuestraUsuarios.addEventListener('click', function(){
         console.error("Error al consumir la API:", error.message);
     });
 })
-
+/**
+ * Evento que elimina a un usuario por el id
+ */
 bntEliminarUsuario.addEventListener('click', function(){
     const id_usuario = document.getElementById('id_usuario').value;
     let mensaje_delete = document.getElementById('mensaje_delete');
@@ -90,12 +96,17 @@ bntEliminarUsuario.addEventListener('click', function(){
     })
     .then(res => res.json())
     .then(data =>{
-        con
-        mensaje_delete.innerHTML = "Usuario eliminado:" + data
-        console.log("Usuario eliminado:", data)   
+        console.log(data.success);
+        if(data.success == true){
+            mensaje_delete.innerHTML = `<p class="walter-turncoat text-green-600 pt-5">Usuario elimidado</p>`
+            console.log("Usuario eliminado:", data)   
+        }else{
+            mensaje_delete.innerHTML = `<p class="walter-turncoat text-red-600 pt-5">Error al eliminar</p>`
+        }
+       
     })
     .catch(err =>{
-        mensaje_delete.innerHTML = "Error al eliminar"
+        mensaje_delete.innerHTML = `<p class="walter-turncoat text-red-600 pt-5">Error al eliminar</p>`
         console.error("Error al eliminar:", err)
     }); 
 })
