@@ -1,5 +1,5 @@
 # CASO PRACTICO DEL MODULO 4
-**autora: Solis Torres Mariana Nazaret**
+**Solis Torres Mariana Nazaret**
 
 ## 1.-CREA LA BASE DE DATOS
 Ejecutar el archivo ejemplo_db.sql para la creacion de la base de datos que se ocupara en el caso practico. 
@@ -25,3 +25,6 @@ Esto te mostrara la pagina del caso practico 4 donde podras:
 - Mostar usuarios
 ![alt text](image.png)
 ![alt text](image-1.png)
+
+## GITHUB
+**https://github.com/nazaret94/Bootcamp-Desarrollo-Web/tree/main/Modulo%204/Caso%20Practico**
