@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso Practico</title>
+</head>
+<body>
+   <header>
+    <h1>Caso Practico 4</h1>
+    <h2>Integracion JS - mySQL</h2>
+   </header>
+   <div>
+        <h3>Seccion para agregar usuario</h3>
+        <label for="nombre_usuario">Nombre:</label>
+        <input type="text" placeholder="Nombre" id="nombre_usuario">
+        <label for="apellido_usuario">Apellido:</label>
+        <input type="text" placeholder="Apellido" id="apellido_usuario">
+        <label for="fecha_nacimiento_usuario">Fecha de nacimiento</label>
+        <input type="date" placeholder="Fecha de nacimiento" id="fecha_nacimiento_usuario">
+        <label for="correo_usuario">Correo</label>
+        <input type="text" placeholder="Correo" id="correo_usuario">
+        <label for="telefono_usuario">Telefono</label>
+        <input type="text" placeholder="Telefono" id="telefono_usuario">
+        <button  id="bntAgregaUsuario">Agrega usuario</button>
+        <p id="mensaje_post"></p>
+    </div>
+    <div>
+        <h3>Seccion para eliminar usuario</h3>
+        <label for="id_usuario">Nombre:</label>
+        <input type="text" placeholder="ID del usuario" id="id_usuario">
+        <button  id="bntEliminarUsuario">Eliminar usuario</button>
+        <p id="mensaje_delete"></p>
+    <div>
+        <h3>Seccion para mostar a los usuarios</h3>
+        <button  id="bntMuestraUsuarios"  class=" bg-blue-600/70 ring-2 ring-blue-600 text-white font-bold w-30 h-8 rounded-xl font-poiretone m-2">Muestra los usuarios</button>
+        <div id="tabla_Usuarios"></div>
+    </div>
+   
+    <script src="./app.js"></script>
+</body>
+</html>
