@@ -29,7 +29,7 @@ Puedes Investigar sobre los tipos de comida disponibles, las áreas de entrega y
 Analiza las páginas web de otras empresas similares de entrega de comida a domicilio para obtener ideas y referencias.
 
 Identifica los elementos esenciales que deben incluirse en la página de inicio, como un campo de búsqueda, categorías de comida, listado de restaurantes destacados, información sobre el proceso de pedido y opciones de registro o inicio de sesión para los usuarios.
-
+![FoodExpress](Modulo%205%20-%20FoodExpress.jpg)
 ![alt text](Modulo 5 - FoodExpress.jpg)
 
 ## FIGMA
