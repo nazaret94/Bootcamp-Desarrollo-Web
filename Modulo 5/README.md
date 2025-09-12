@@ -30,7 +30,7 @@ Analiza las páginas web de otras empresas similares de entrega de comida a domi
 
 Identifica los elementos esenciales que deben incluirse en la página de inicio, como un campo de búsqueda, categorías de comida, listado de restaurantes destacados, información sobre el proceso de pedido y opciones de registro o inicio de sesión para los usuarios.
 
-[text](<Modulo 5 - FoodExpress.pdf>)
+![alt text](Modulo 5 - FoodExpress.jpg)
 
 ## FIGMA
 **https://www.figma.com/design/wWyRVqhbJN0E0KMxZtLor3/Modulo-5---FoodExpress?node-id=33-38&t=pqaFehUZmHNeSdCU-1**
