@@ -31,4 +31,4 @@ Analiza las páginas web de otras empresas similares de entrega de comida a domi
 ## FIGMA
 **https://www.figma.com/design/REUqDfzIcST77kYSqqDBL1/Modulo-5---FoodExpress-prototipo?node-id=2001-3&t=MZn9xuElvgY0znRx-1**
 
-**https://www.figma.com/proto/wWyRVqhbJN0E0KMxZtLor3/Modulo-5---FoodExpress?page-id=0%3A1&node-id=33-38&p=f&viewport=703%2C172%2C0.4&t=wJ42DDLSRrWOIt6t-1&scaling=scale-down-width&content-scaling=fixed**
+**https://www.figma.com/proto/REUqDfzIcST77kYSqqDBL1/Modulo-5---FoodExpress-prototipo?page-id=2001%3A3&node-id=2015-216&viewport=216%2C310%2C0.5&t=WVHuGETN64SgQ1Pv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2015%3A216**
